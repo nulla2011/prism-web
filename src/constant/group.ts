@@ -1,4 +1,4 @@
-export const groups = {
+const groups = {
   illuminationstars: 'illumination STARS',
   lantica: "L'Antica",
   hokagoclimaxgirls: '放課後クライマックスガールズ',
@@ -7,3 +7,4 @@ export const groups = {
   noctchill: 'noctchill',
   shhis: 'SHHis',
 };
+export default groups;
