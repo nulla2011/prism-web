@@ -1,7 +1,5 @@
 import { RouteRecordRaw } from 'vue-router';
-import AppVue from '@/App.vue';
-import groups from '@/constant/group';
-import Group from '@/layouts/Group.vue';
+// import groups from '@/constant/group';
 
 // let children = new Array<RouteRecordRaw>();
 // for (const key in groups) {
@@ -11,12 +9,12 @@ import Group from '@/layouts/Group.vue';
 //     component: Group,
 //   } as RouteRecordRaw);
 // }
-let grps: RouteRecordRaw[] = [
+let groups: RouteRecordRaw[] = [
   {
     path: '/group/:groupName',
     name: 'GROUPS',
-    component: Group,
+    component: () => import('@/layouts/Group.vue'),
   },
 ];
 
-export default grps;
+export default groups;
