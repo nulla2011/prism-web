@@ -12,6 +12,11 @@
   -moz-osx-font-smoothing: grayscale;
   color: #615466;
 }
+
+header {
+  position: fixed;
+  width: 100%;
+}
 </style>
 <script setup lang="ts">
 import NavBar from "@/layouts/NavBar.vue"

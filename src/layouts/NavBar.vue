@@ -1,13 +1,14 @@
 <template>
   <div class="wrapper container mx-auto flex flex-row justify-center">
     <el-dropdown>
-      <span class="el-dropdown-link tab">IDOL
+      <span class="el-dropdown-link tab outline-none">IDOL
         <el-icon class="el-icon-right"><arrow-down /></el-icon>
       </span>
       <template #dropdown>
         <el-dropdown-menu>
-          <el-dropdown-item v-for="(value, name) in groups"><a class="w-52" @click="toGroup(name)">{{ value
-          }}</a></el-dropdown-item>
+          <a class="w-52 h-full" v-for="(value, name) in groups" @click="toGroup(name)">
+            <el-dropdown-item> {{ value }} </el-dropdown-item>
+          </a>
         </el-dropdown-menu>
       </template>
     </el-dropdown>

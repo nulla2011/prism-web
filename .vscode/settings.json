@@ -1,0 +1,6 @@
+{
+  "scss.lint.unknownAtRules": "ignore",
+  "files.exclude": {
+    "**/node_modules": true
+  }
+}
