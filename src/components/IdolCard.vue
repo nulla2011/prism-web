@@ -1,5 +1,5 @@
 <template>
-  <el-card :body-style="{ padding: '0px' }" class="m-8">
+  <el-card :body-style="{ padding: '0px' }" class="card">
     <router-link :to="{ name: 'idol', params: { idolName: data.roman } }">
       <div class="img-container w-full h-auto overflow-hidden">
         <el-image :src="data.imagesrc" class="image duration-200" />

@@ -1,5 +1,5 @@
-import groups from '@/constant/group';
-import idols from '@/constant/idols';
+import groups from '@/constants/group';
+import idols from '@/constants/idols';
 export default (group: string) => {
   let id = Object.keys(groups).findIndex((el) => el === group) + 1;
   let list = [];
