@@ -9,6 +9,7 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+    CardCard: typeof import('./src/components/CardCard.vue')['default']
     ElCard: typeof import('element-plus/es')['ElCard']
     ElCol: typeof import('element-plus/es')['ElCol']
     ElDropdown: typeof import('element-plus/es')['ElDropdown']

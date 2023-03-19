@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <header class="z-10 bg-white bg-opacity-70 backdrop-blur-sm">
     <NavBar></NavBar>
   </header>
   <router-view></router-view>

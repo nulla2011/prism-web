@@ -1,8 +1,10 @@
 <template>
   <el-row class="top-28 flex-warp justify-center" type="flex">
     <el-col v-for="idol in idolList" :span="8" class="col m-8">
-      <idol-card
-        :data="{ name: idol.name, roman: idol.roman, imagesrc: 'https://idollist.idolmaster-official.jp/images/character_main/' + idol.roman + '_01.jpg' }"></idol-card>
+      <router-link :to="{ name: 'idol', params: { idolName: idol.roman } }">
+        <idol-card
+          :data="{ name: idol.name, roman: idol.roman, imagesrc: 'https://idollist.idolmaster-official.jp/images/character_main/' + idol.roman + '_01.jpg' }"></idol-card>
+      </router-link>
     </el-col>
   </el-row>
 </template>
@@ -11,7 +13,7 @@ import IdolCard from "@/components/IdolCard.vue";
 import { watch, Ref, ref } from "vue";
 import { useRoute } from "vue-router";
 import usePickIdols from "@/composables/usePickIdols";
-import idols from "@/constant/idols";
+import idols from "@/constants/idols";
 
 const route = useRoute();
 let idolList: Ref<typeof idols> = ref(usePickIdols(route.params.groupName as string))

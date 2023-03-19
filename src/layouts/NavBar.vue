@@ -17,7 +17,7 @@
 </template>
 <script setup lang="ts">
 import { ArrowDown } from '@element-plus/icons-vue'
-import groups from '@/constant/group'
+import groups from '@/constants/group'
 import { useRouter } from 'vue-router'
 const router = useRouter()
 const toGroup = (group: string) => {

@@ -7,7 +7,7 @@
   </el-card>
 </template>
 <script setup lang="ts">
-let props = defineProps<{ data: { name: string, roman: string, imagesrc: string } }>()
+let props = defineProps<{ data: { name: string, imagesrc: string } }>()
 </script>
 <style lang="scss" scoped>
 .img-container {
